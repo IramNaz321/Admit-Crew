@@ -1,0 +1,6 @@
+{
+  "name": "AdmitCrew - Admissions Agentic Team",
+  "description": "Multi-agent AI team for Nowshera Study Abroad Consultants: 24/7 student intake, strict university-catalog advisory, document verification, and human-in-the-loop follow-ups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

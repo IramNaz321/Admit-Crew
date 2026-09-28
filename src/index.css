@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', 'Italiana', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #2e1065;
+    background-color: #faf5ff;
+    background-image: 
+      radial-gradient(at 10% 15%, rgba(192, 132, 252, 0.22) 0px, transparent 55%),
+      radial-gradient(at 90% 85%, rgba(168, 85, 247, 0.16) 0px, transparent 55%),
+      radial-gradient(at 50% 50%, rgba(216, 180, 254, 0.18) 0px, transparent 65%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-heading);
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom aesthetic glow and scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f3e8ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #c084fc;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+.purple-glass {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(216, 180, 254, 0.6);
+}
+
+.purple-glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 245, 255, 0.9) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(216, 180, 254, 0.7);
+  box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.1);
+}
+
+.purple-glow {
+  box-shadow: 0 0 35px -5px rgba(192, 132, 252, 0.35);
+}
+
+.purple-gradient-text {
+  background: linear-gradient(135deg, #3b0764 0%, #6b21a8 40%, #9333ea 80%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-gradient-text {
+  background: linear-gradient(135deg, #3b0764 0%, #7e22ce 40%, #a855f7 80%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-chic {
+  font-family: 'Italiana', 'Playfair Display', serif;
+}
+
+/* Button & Pill Animations */
+.aesthetic-btn {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.aesthetic-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -4px rgba(168, 85, 247, 0.35);
+}
+.aesthetic-btn:active {
+  transform: translateY(0);
+}
